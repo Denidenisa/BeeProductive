@@ -4,13 +4,27 @@
 
 @import './theme.css';
 /* Style global de mon app */
-body {
-  @apply font-poppins;
+#root {
+  @apply font-poppins min-h-screen flex flex-col;
 }
+
+main {
+  @apply h-full grow;
+}
+
 
 /* Style Header */
 header {
   a {
-      @apply text-main-400 underline decoration-transparent decoration-3 underline-offset-8  hover:decoration-secondary-400 transition duration-150 ease-in-out;
+      @apply text-main-400 underline decoration-transparent decoration-3 underline-offset-8  hover:decoration-secondary-200 transition duration-150 ease-in-out;
+     
   }
+  a.active{
+    @apply text-secondary-200
+  }
+ 
+}
+.btn{
+  @apply bg-main-400 text-main-50
+py-2 px-4 rounded-lg no-underline outline-2 outline-transparent hover:outline-secondary-300 hover:bg-transparent hover:text-main-400;
 }
