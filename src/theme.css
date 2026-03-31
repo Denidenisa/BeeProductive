@@ -1,0 +1,42 @@
+/* ✅ @font-face declarations OUTSIDE @theme */
+@font-face {
+  font-family: 'Garamond';
+  src: url("/fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@theme {
+  /* ✅ Only custom properties inside @theme */
+  --font-poppins: 'Poppins';
+  --font-garamond: 'Garamond';
+
+  /* Couleur Principale */
+  --color-main-50: #fff1f3;
+  --color-main-100: #ffdbe0;
+  --color-main-200: #fecdd6;
+  --color-main-300: #fda4b5;
+  --color-main-400: #fb718e;
+  --color-main-500: #f43f6a;
+  --color-main-600: #e11d55;
+  --color-main-700: #be1247;
+  --color-main-800: #9f1242;
+  --color-main-900: #88133f;
+  --color-main-950: #4c051e;
+
+  /* Couleur Secondaire */
+  --color-secondary-50: #f6f7ef;
+  --color-secondary-100: #eaecd8;
+  --color-secondary-200: #d7dab5;
+  --color-secondary-300: #b6bb79;
+  --color-secondary-400: #aaaf66;
+  --color-secondary-500: #969a50;
+  --color-secondary-600: #7e7f40;
+  --color-secondary-700: #646335;
+  --color-secondary-800: #535130;
+  --color-secondary-900: #49472c;
+  --color-secondary-950: #282716;
+}
