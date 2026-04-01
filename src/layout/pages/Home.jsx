@@ -5,6 +5,7 @@ export const Home =()=>{
   <h1 className="text-4xl">Bienvenue sur <span>Butterfly</span><span className="text-secondary-300">Productivity</span><span>Effect</span></h1>
   <h2 className="text-2xl">Le site pour booster ta productivité </h2>
   <button className="btn">Demander de l'aide à Fly</button>
+  
 </section>
 
     </>

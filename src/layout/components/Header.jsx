@@ -22,7 +22,17 @@ export const Header = () => {
                         <NavLink to="/pomodoro">Pomodoro</NavLink>
                     </li>
                     <li>
-                        <NavLink className="btn"to="/login">Me connecter</NavLink>
+                        <NavLink to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/faq">FAQ</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="btn"to="/auth/login">Me connecter</NavLink>
+
+                    </li>
+                    <li>
+                        <NavLink className="btn"to="/auth/register">Créer un compte </NavLink>
 
                     </li>
                 </ul>
