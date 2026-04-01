@@ -13,7 +13,7 @@ export const TaskHome = () => {
       {/* En-tête */}
       <div className="mb-10">
         <p className="text-xs font-semibold  uppercase text-secondary-400 mb-1">
-          Bonjour, Donuts sucré 🌸
+          Bonjour, Miel sucré 🍯 🌸
         </p>
         <h1 className="font-serif text-2xl text-main-400">
           Tu as {tasks.length} tâches à faire
@@ -38,7 +38,7 @@ export const TaskHome = () => {
                 {task.tag}
               </span>
             </div>
-            <span className="text-main-300 text-base">→</span>
+            <span className="text-secondary-400 text-base">→</span>
           </NavLink>
         ))}
       </div>

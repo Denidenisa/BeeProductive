@@ -6,7 +6,7 @@ export function AboutHome() {
       <div className="max-w-3xl mx-auto flex flex-col">
 
         {/* Titre */}
-        <h1 className="text-center font-serif text-4xl font-bold text-main-500 mb-12 ">
+        <h1 className="text-center font-serif text-4xl font-bold text-secondary-400 mb-12 ">
           À propos
         </h1>
 

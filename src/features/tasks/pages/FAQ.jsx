@@ -6,7 +6,7 @@ export function FAQ() {
     <section className="py-14 px-8 md:px-48 flex flex-col gap-8 items-center text-main-400 max-w-4xl mx-auto">
 
       <div className="text-center flex flex-col gap-3">
-        <h1 className="text-3xl font-bold text-main-600">𓂃 ࣪˖ ִֶָ𐀔 Questions fréquentes 𓂃 ࣪˖ ִֶָ𐀔</h1>
+        <h1 className="text-3xl font-bold text-secondary-400">˚˖𓍢ִ໋❀ˋQuestions fréquentes ˚˖𓍢ִ໋❀ˋ</h1>
         <p className="text-main-400">Réponses aux questions les plus fréquentes sur Interface3 et notre formation.</p>
       </div>
 

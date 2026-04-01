@@ -27,7 +27,7 @@ export const RegisterForm = () => {
 
                 {/* Titre du formulaire */}
                 <div className="mb-10 text-center">
-                    <h1 className="font-serif text-3xl font-bold text-main-400">
+                    <h1 className="font-serif text-3xl font-bold text-secondary-400">
                         Créer un compte
                     </h1>
                     <div  />
@@ -108,7 +108,7 @@ export const RegisterForm = () => {
                     {/* Bouton de soumission */}
                     <button
                         type="submit"
-                        className="mt-2 w-full bg-main-300 text-white text-sm font-medium tracking-widest uppercase py-3 rounded-lg"
+                        className="btn"
                     >
                         S'enregistrer
                     </button>

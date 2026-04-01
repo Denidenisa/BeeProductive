@@ -7,7 +7,7 @@ export const Header = () => {
           <div className="flex items-center gap-8">
               <img className="w-8" src="/icons/butterfly.svg" alt="logo du site  représentant un papillion" />
 
-              <p className="text-main-400  font-bold font-Gramond tracking-widest"> Butterfly<span className="text-secondary-300">Productivity</span>Effect </p>
+              <p className="text-main-400  font-bold font-Gramond tracking-widest"> Bee<span className="text-secondary-300">Productive</span> </p>
           </div>
 
           <nav>
