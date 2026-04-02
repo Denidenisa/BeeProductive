@@ -8,6 +8,7 @@ import { TaskDetails } from "./features/tasks/pages/TaskDetails";
 import { AboutHome } from "./features/tasks/pages/AboutHome";
 import { FAQ } from "./features/tasks/pages/FAQ";
 import { Register } from "./features/auth/pages/Register";
+import { Login } from "./features/auth/pages/login";
 
 /**
  * @type { import("react-router").RouteObject}
@@ -51,6 +52,10 @@ export const routes = [
                     {
                         path : 'register',
                         element : <Register />
+                    },
+                    {
+                        path : 'login',
+                        element : <Login />
                     }
                 ]
             },

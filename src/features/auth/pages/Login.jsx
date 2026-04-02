@@ -1,25 +1,21 @@
 import { useId } from "react";
 import { useNavigate } from "react-router";
 import authService from "../../../service/auth.service";
-
-export const RegisterForm = () => {
-
+   
+export const Login = () => {
+ 
     const id = useId();
     const navigate = useNavigate();
-
-    const handleRegisterSubmit = async (formData) => {
-        console.log('FormData', formData);
-
-        //conversion des données vers un objet js
-        //se base sur la valeur des champs (checkbox ->"on")
+ 
+    const handleLoginSubmit = async (formData) => {
+        console.log(formData);
         const data = Object.fromEntries(formData.entries());
-        console.log('Data', data);
-        //il faut transformer le formData en object js car la webAPI ne s'attend pas a recevoir des données du type "FormData"
-
-        //utiliser le service qui permet de contacter la webAPI
-        await authService.register(data);
-        //redirection vers la page d'accueil
-        navigate('/');
+        console.log(data);
+        // ici, on peut appeler une méthode de notre service d'authentification pour envoyer les données de connexion au backend et obtenir un token d'authentification ou une réponse indiquant si la connexion a réussi ou échoué
+        const token = await authService.login(data);
+       console.log("token", token);
+       
+        navigate("/"); // redirection vers la page d'accueil après la connexion réussie
     };
 
     return (
@@ -29,13 +25,13 @@ export const RegisterForm = () => {
 
                 <div className="mb-10 text-center">
                     <h1 className="font-serif text-3xl font-bold text-secondary-400">
-                        Créer un compte
+                        Se connecter
                     </h1>
                     <div />
                 </div>
 
                 <form
-                    action={handleRegisterSubmit}
+                    action={handleLoginSubmit}
                     className="bg-white rounded-2xl shadow-sm border border-main-200 p-8 flex flex-col gap-5"
                 >
 
@@ -56,38 +52,7 @@ export const RegisterForm = () => {
                     </div>
 
 
-                    <div className="flex flex-col gap-1.5">
-                        <label
-                            htmlFor={id + 'firstname'}
-                            className="text-xs font-medium tracking-widest uppercase text-secondary-400"
-                        >
-                            Prénom
-                        </label>
-                        <input
-                            id={id + 'firstname'}
-                            type="text"
-                            name="lastname"
-                            placeholder="Votre nom"
-                            className="border  border-main-200 rounded-lg px-4 py-2.5  bg-[#faf9f6]  "
-                        />
-                    </div>
-
-
-                    <div className="flex flex-col gap-1.5">
-                        <label
-                            htmlFor={id + 'lastname'}
-                            className=" font-medium tracking-widest uppercase text-secondary-400"
-                        >
-                            Nom
-                        </label>
-                        <input
-                            id={id + 'lastname'}
-                            type="text"
-                            name="firstname"
-                            placeholder="Votre prénom"
-                            className=" border  border-main-200 rounded-lg px-4 py-2.5  ] bg-[#faf9f6] "
-                        />
-                    </div>
+                 
 
 
                     <div className="flex flex-col gap-1.5">
@@ -111,7 +76,7 @@ export const RegisterForm = () => {
                         type="submit"
                         className="btn"
                     >
-                        S'enregistrer
+                        Se connecter
                     </button>
                 </form>
             </div>

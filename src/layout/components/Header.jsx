@@ -5,9 +5,9 @@ export const Header = () => {
       <header className="flex justify-between py-4 px-8 bg-secondary-50">
           
           <div className="flex items-center gap-8">
-              <img className="w-8" src="/icons/butterfly.svg" alt="logo du site  représentant un papillion" />
+              <img className="w-8" src="/icons/butterfly.svg" alt="logo du site  représentant une abeille" />
 
-              <p className="text-main-400  font-bold font-Gramond tracking-widest"> Bee<span className="text-secondary-300">Productive</span> </p>
+              <p className="text-secondary-300 font-bold font-Gramond tracking-widest"> Bee<span className=" text-main-400">Productive</span> </p>
           </div>
 
           <nav>

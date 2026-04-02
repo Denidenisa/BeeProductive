@@ -6,7 +6,7 @@ export const NotFound = () => {
 
           <h2 className="text-lg text-main-400">La ressource que vous cherchez n'existe pas</h2>
 
-          <img className="h-56" src="/images/butterfly_404.svg" alt="image de papillions colorés" />
+          <img className="h-56" src="/images/butterfly_404.svg" alt="abeille triste" />
       </section>
   )
 }

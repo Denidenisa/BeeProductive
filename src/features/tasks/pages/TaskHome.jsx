@@ -13,12 +13,12 @@ export const TaskHome = () => {
       {/* En-tête */}
       <div className="mb-10">
         <p className="text-xs font-semibold  uppercase text-secondary-400 mb-1">
-          Bonjour, Miel sucré 🍯 🌸
+          Bonjour, Miel sucré ⋆˚🐝˖°﹒
         </p>
         <h1 className="font-serif text-2xl text-main-400">
           Tu as {tasks.length} tâches à faire
         </h1>
-        <p className="text-sm text-secondary-400 mt-1">Courage, une à la fois ✨</p>
+        <p className="text-sm text-secondary-400 mt-1">Courage, une à la fois *ੈ✩‧₊˚</p>
       </div>
 
       {/* Liste */}

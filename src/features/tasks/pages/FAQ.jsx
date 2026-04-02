@@ -10,7 +10,7 @@ export function FAQ() {
         <p className="text-main-400">Réponses aux questions les plus fréquentes sur Interface3 et notre formation.</p>
       </div>
 
-      <ul className="w-full flex flex-col gap-4">
+      <ul className="w-full grid grid-grid-2 sm:grid-cols-2 lg:grid-cols-2 gap-4 ">
         {faqData.map((item, index) => (
           <li key={index} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col gap-2">
             <strong className="text-secondary-400 text-lg">{item.question}</strong>

@@ -1,7 +1,7 @@
 [
   { "question": "C'est quoi BeeProductivt ?", "answer": "BeeProductiv est un site web de gestion de tâches qui transforme chaque micro-action en une grande vague de productivité. Un papillon bat des ailes, tu coches une tâche, et ta semaine est sauvée." },
-  { "question": "Comment créer une tâche ?", "answer": "Clique sur le bouton '+', donne un nom à ta tâche, choisis une priorité et c'est parti ! (Oui, c'est aussi simple que ça  pas besoin d'un tutoriel de 45 min comme certains outils qu'on ne citera pas.)" },
-  { "question": "Puis-je organiser mes tâches en projets ?", "answer": "Oui ! Tu peux créer des projets, y glisser tes tâches et les classer par priorité. Ton cerveau te remerciera, et peut-être même tes collègues." },
+  { "question": "Comment créer une tâche ?", "answer": "Clique sur le bouton '+', donne un nom à ta tâche (Oui, c'est aussi simple que ça  pas besoin d'un tutoriel de 45 min comme certains outils qu'on ne citera pas.)" },
+  { "question": "Puis-je organiser mes tâches en projets ?", "answer": "Oui ! Tu peux créer des projets, y glisser tes tâches. Ton cerveau te remerciera, et peut-être même tes collègues." },
   { "question": "Y a-t-il des rappels et notifications ?", "answer": "Absolument pas !" },
   { "question": "Est-ce que l'app fonctionne hors ligne ?", "answer": "Oui ! Tes tâches sont disponibles hors ligne. Parce que la productivité ne devrait pas dépendre de ton Wi-Fi douteux dans le métro." },
   { "question": "Puis-je partager des tâches avec mon équipe ?", "answer": "Oui, tu peux collaborer et assigner des tâches à d'autres membres. Idéal pour déléguer enfin, c'est comme ça que tu le vendras à ton équipe." },
