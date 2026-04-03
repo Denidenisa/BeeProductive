@@ -1,10 +1,10 @@
 [
-  { "question": "C'est quoi BeeProductivt ?", "answer": "BeeProductiv est un site web de gestion de tâches qui transforme chaque micro-action en une grande vague de productivité. Un papillon bat des ailes, tu coches une tâche, et ta semaine est sauvée." },
+  { "question": "C'est quoi BeeProductive ?", "answer": "BeeProductive est un site web de gestion de tâches qui transforme chaque micro-action en une grande vague de productivité. Un papillon bat des ailes, tu coches une tâche, et ta semaine est sauvée." },
   { "question": "Comment créer une tâche ?", "answer": "Clique sur le bouton '+', donne un nom à ta tâche (Oui, c'est aussi simple que ça  pas besoin d'un tutoriel de 45 min comme certains outils qu'on ne citera pas.)" },
   { "question": "Puis-je organiser mes tâches en projets ?", "answer": "Oui ! Tu peux créer des projets, y glisser tes tâches. Ton cerveau te remerciera, et peut-être même tes collègues." },
   { "question": "Y a-t-il des rappels et notifications ?", "answer": "Absolument pas !" },
   { "question": "Est-ce que l'app fonctionne hors ligne ?", "answer": "Oui ! Tes tâches sont disponibles hors ligne. Parce que la productivité ne devrait pas dépendre de ton Wi-Fi douteux dans le métro." },
-  { "question": "Puis-je partager des tâches avec mon équipe ?", "answer": "Oui, tu peux collaborer et assigner des tâches à d'autres membres. Idéal pour déléguer enfin, c'est comme ça que tu le vendras à ton équipe." },
+ 
   { "question": "Comment fonctionne la priorité des tâches ?", "answer": "Tu choisis entre Urgente, Haute, Normale ou Basse. L'app t'aide à voir ce qui compte vraiment et ce qui peut attendre... comme cette réunion qui aurait pu être un email." },
   { "question": "Puis-je voir mes tâches complétées ?", "answer": "Bien sûr ! Il y a une section 'Complétées' pour savourer ta progression. Rien de plus motivant que de relire tout ce que tu as accompli — surtout les lundis difficiles." },
   { "question": "L'app est-elle gratuite ?", "answer": "Non" },

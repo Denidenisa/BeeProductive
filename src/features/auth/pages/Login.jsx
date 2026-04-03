@@ -11,16 +11,20 @@ export const Login = () => {
     const setToken =useSetAtom(tokenAtom)
  
     const handleLoginSubmit = async (formData) => {
-        console.log(formData);
         const data = Object.fromEntries(formData.entries());
-        console.log(data);
-        // ici, on peut appeler une méthode de notre service d'authentification pour envoyer les données de connexion au backend et obtenir un token d'authentification ou une réponse indiquant si la connexion a réussi ou échoué
-        const token = await authService.login(data);
-        //sauvgarder le token dan sun atom via jotai
-      setToken( token);
+        console.log("data:", data);
        
-        navigate("/"); // redirection vers la page d'accueil après la connexion réussie
-    };
+        
+        try {
+           
+            const response = await authService.login(data);
+            console.log("Response:", response);
+            setToken(response.token ?? response);
+            navigate("/");
+        } catch (error) {
+            console.error("Erreur login:", error.response?.data);
+        }
+    }
 
     return (
         <div className="min-h-screen bg-[#faf9f6] flex items-center justify-center px-4 py-14">
