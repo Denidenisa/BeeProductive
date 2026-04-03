@@ -1,11 +1,14 @@
 import { useId } from "react";
 import { useNavigate } from "react-router";
 import authService from "../../../service/auth.service";
+import { useSetAtom } from "jotai";
+import { tokenAtom } from "../../../atoms/auth.atom";
    
 export const Login = () => {
  
     const id = useId();
     const navigate = useNavigate();
+    const setToken =useSetAtom(tokenAtom)
  
     const handleLoginSubmit = async (formData) => {
         console.log(formData);
@@ -13,7 +16,8 @@ export const Login = () => {
         console.log(data);
         // ici, on peut appeler une méthode de notre service d'authentification pour envoyer les données de connexion au backend et obtenir un token d'authentification ou une réponse indiquant si la connexion a réussi ou échoué
         const token = await authService.login(data);
-       console.log("token", token);
+        //sauvgarder le token dan sun atom via jotai
+      setToken( token);
        
         navigate("/"); // redirection vers la page d'accueil après la connexion réussie
     };
