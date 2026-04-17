@@ -1,48 +1,35 @@
-import { NavLink } from "react-router";
-
-const tasks = [
-  { id: 1, label: "Préparer le bataillon pour lundi", emoji: "⚔️", tag: "Travail" },
-  { id: 2, label: "Aller nourrir les chevaux", emoji: "🐎", tag: "Urgent" },
-  { id: 3, label: "Aller s'amuser", emoji: "😃", tag: "Perso" },
-];
+import { NavLink } from "react-router"
+import { TaskUserSelector } from '../components/TaskUserSelector'
 
 export const TaskHome = () => {
-  return (
-    <div className="  px-6 py-10 max-w-xl mx-auto">
+    return (
+        <>
+            <section className="py-6 px-12 flex items-center gap-6">
+                <img className="w-40" src="/images/beehome2.svg" alt="note petite abeille " />
 
-      {/* En-tête */}
-      <div className="mb-10">
-        <p className="text-xs font-semibold  uppercase text-secondary-400 mb-1">
-          Bonjour, Miel sucré ⋆˚🐝˖°﹒
-        </p>
-        <h1 className="font-serif text-2xl text-main-400">
-          Tu as {tasks.length} tâches à faire
-        </h1>
-        <p className="text-sm text-secondary-400 mt-1">Courage, une à la fois *ੈ✩‧₊˚</p>
-      </div>
+                <h1 className="text-xs font-semibold  uppercase text-secondary-400 mb-1">
+          Bonjour, Miel sucré ⋆˚🐝˖°﹒</h1>
+            </section>
 
-      {/* Liste */}
-      <div className="flex flex-col gap-3">
-        {tasks.map((task) => (
-          <NavLink
-            key={task.id}
-            to={`/task/${task.id}`}
-            className="flex items-center gap-4 bg-white border border-main-100 rounded-2xl px-5 py-4 shadow-sm hover:border-main-300 transition-colors"
-          >
-            <span className="text-xl w-9 h-9 flex items-center justify-center bg-main-50 rounded-xl ">
-              {task.emoji}
-            </span>
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-main-900 ">{task.label}</p>
-              <span className="text-[10px] font-semibold  uppercase text-secondary-400">
-                {task.tag}
-              </span>
-            </div>
-            <span className="text-secondary-400 text-base">→</span>
-          </NavLink>
-        ))}
-      </div>
+            <section className="flex flex-col gap-3">
+                    {/* TODO : Normalement il y aura les tâches de l'API, là on va juste faire des liens vers des tâches inexistantes pour comprendre le routing */}
 
-    </div>
-  );
-};
+                    {/* <NavLink to="/task/1">
+                        Voir détails tâche 1
+                    </NavLink>
+
+                    <NavLink to="/task/2">
+                        Voir détails tâche 2
+                    </NavLink>
+
+                    <NavLink to="/task/3">
+                        Voir détails tâche 3
+                    </NavLink> */}
+
+                    {/* TODO: On tester que le TaskUserSelector fonctionne, on l'utilisera par la suite pour ajouter ou voir des taches */}
+                    <TaskUserSelector />
+
+            </section>
+        </>
+    )
+}

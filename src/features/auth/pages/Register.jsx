@@ -5,12 +5,16 @@ import { RegisterForm } from "./RegisterForm"
   return (
 
       <>
-          
+        <section >
+                <h1>
+                   
+                </h1>
+            </section>
 
-          <section className="flex flex-col w-full  ">
-            <RegisterForm/>
+            <section>
+                <RegisterForm />
+            </section>
 
-          </section>
       </>
   )
 }
