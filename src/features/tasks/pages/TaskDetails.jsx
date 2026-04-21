@@ -21,20 +21,43 @@ export const TaskDetails = () => {
 
         {/* En-tête */}
         <div className="flex items-center gap-3">
-          <span className="bg-secondary-100 text-secondary-600 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
+          <span className="bg-main-100 text-main-600 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">
             Tâche n°{id}
           </span>
           <h1 className="text-3xl font-serif text-main-300">Détails de la tâche</h1>
         </div>
 
-        
+        {/* Card */}
+        <div className="bg-white border border-main-100 rounded-2xl p-7 flex flex-col gap-4">
+          <div className="flex items-center gap-3 text-sm">
+            <span className="font-medium text-main-700 w-28">Statut</span>
+            <span className="bg-secondary-100 text-secondary-700 text-xs font-semibold px-3 py-1 rounded-full">
+              En cours
+            </span>
+          </div>
+          <hr className="border-main-100" />
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <span className="font-medium text-main-700 w-28">Assignée à</span>
+            <span>Eren Jager </span>
+          </div>
+          <hr className="border-main-100" />
+          <div className="flex items-center gap-3 text-sm text-gray-600">
+            <span className="font-medium text-main-700 w-28">Échéance</span>
+            <span>15 avril 2026</span>
+          </div>
+          <hr className="border-main-100" />
+          <div className="flex items-start gap-3 text-sm text-gray-600">
+            <span className="font-medium text-main-700 w-28">Description</span>
+            <span>Acheter des pommes .</span>
+          </div>
+        </div>
 
         {/* Actions */}
         <div className="flex gap-3">
-          <button className="btn">
+          <button className="bg-main-500 text-white text-sm font-medium px-5 py-2.5 rounded-xl hover:opacity-85 transition-opacity">
             Marquer comme terminée
           </button>
-          <button className="border border-secondary-200 text-secondary-600 text-sm font-medium px-5 py-2.5 rounded-xl hover:opacity-85 transition-opacity">
+          <button className="border border-main-200 text-main-600 text-sm font-medium px-5 py-2.5 rounded-xl hover:opacity-85 transition-opacity">
             Modifier
           </button>
         </div>
